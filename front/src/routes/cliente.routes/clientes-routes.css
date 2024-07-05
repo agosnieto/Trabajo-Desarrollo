@@ -1,0 +1,9 @@
+.form-center-clientes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.parrafo-form{
+    margin: 5px;
+}

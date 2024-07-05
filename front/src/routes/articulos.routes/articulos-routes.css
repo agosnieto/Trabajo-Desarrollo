@@ -1,0 +1,22 @@
+.contenedor-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-consulta-articulo{
+    height: 130px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-center-articulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    box-shadow: none;
+}

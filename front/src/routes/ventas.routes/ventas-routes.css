@@ -1,0 +1,17 @@
+.contenedor-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+form{
+    width: 400px;
+}
+.form-buscar-venta{
+    margin-top: 0;
+}
+.subtitulo{
+    font-weight:600;
+    margin: 10px;
+}
