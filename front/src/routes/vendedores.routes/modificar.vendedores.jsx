@@ -81,11 +81,19 @@ export default function ModificarVendedores(){
             </form>
             <p>{error}</p>
             <p>{agregado}</p>
-            <p>{legajo? `Legajo : ${legajo}`: ''}</p>
-            <p>{nombre_vendedor? `Nombre del vendedor : ${nombre_vendedor}`: ''}</p>
-            <p>{id_barrio? `Id del barrio : ${id_barrio}`: ''}</p>
-            <p>{fecha_ingreso? `Fecha de ingreso : ${fecha_ingreso}`: ''}</p>
-
+            {legajo &&
+                <div className="card mt-3" style={{margin: '10px'}}>
+                    <div className="card-body">
+                        <h5 className="card-title">Detalles de la venta modificada:</h5>
+                        <ul className="list-group list-group-flush">
+                            <li className="list-group-item"><strong>Legajo:</strong> {legajo}</li>
+                            <li className="list-group-item"><strong>Nombre Vendedor:</strong> {nombre_vendedor}</li>
+                            <li className="list-group-item"><strong>Id del Barrio:</strong> {id_barrio}</li>
+                            <li className="list-group-item"><strong>Fecha Ingreso:</strong> {fecha_ingreso}</li>
+                        </ul>
+                    </div>
+                </div>
+            }
             <TablaVendedores items={lista}/>   
 
         </div>
